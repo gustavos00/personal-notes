@@ -11,6 +11,7 @@
 
 **pg** - Nickname for PostgreSQL.
 **Keys** - Common attributes between tables.
+**LAMP stack** - Is a stack based on Linux, Apache, MySQL, PHP.
 
 ---
 
@@ -38,3 +39,32 @@ ACID is a acronym that stands for **Atomicity**, **Consistency**, **Isolation**,
  - **Durability** - It guarantees that once a transaction is committed and changes are written to the database, they will persist even if the system fail or restart.
 
 ---
+
+## PostgreSQL
+   - **Pros:** 
+    - Extensibility: PostgreSQL is highly extensible. It allow the users to create custom data types, functions and operators. With this, we can adapt the database to meet tohe specific needs for the application.
+    - Geographic data support: PostgreSQL has native support to geoographic data.
+
+   - **Cons:**
+     - Complexity: PostgreSQL can be more complex to configure and administer compared to MySQL. Because of the a lot of the configuration options and advanced knowledge to optimize performance and security. 
+     - Lower web adoption: Because MySQL has historically higher adoption in web environments. Particularly with the LAMP stack.
+
+---
+
+## Basic commands on PostgreSQL
+
+### Databases
+  - #### List all
+  
+  ```mysql
+  \l
+  ```
+  
+  - #### Connect to a specific database
+  
+  ```mysql
+ \c database_name
+  ```
+  
+### Tables
+ TBD...
