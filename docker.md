@@ -56,18 +56,68 @@ You can create custom images with the configuration of the environment, etc... b
 
 ## Basic commands on PostgreSQL
 
-### Databases
-  - #### List all
+### Images
+  - #### Pull
   
-  ```mysql
-  \l
+  ```sh
+  # It allow us to pull the image that we want.
+  # By default, docker will always pick the latest one. 
+  docker pull <image-name>:<tag>
   ```
   
-  - #### Connect to a specific database
+  - #### List
   
-  ```mysql
- \c database_name
+  ```sh
+  docker image ls
+  # OR
+  docker images -a
   ```
   
-### Tables
- TBD...
+     - #### Delete 
+
+  ```sh
+  # You would need a image ID, that you can pick on the list command.
+  docker rmi <image-id> | <image-name>
+  ```
+
+### Containers
+  - #### Create
+
+  ```sh 
+  docker run <properties> -d <image-name>
+  # "docker run" - Used to create and start a new docker container
+  # "-d" - It start the container in background, so it can run independently.
+  ```
+
+  - #### List active containers
+
+  ```sh
+  docker ps 
+  # OR 
+  docker container ls
+  ```
+
+  - #### List all containers
+
+  ```sh
+  docker ps -a
+  # OR 
+  docker container ls -a
+  ```
+
+   - #### Delete 
+
+  ```sh
+  # You would need a container ID, that you can pick on the list command.
+  docker rm <container-id>
+  ```
+
+  - #### Stop
+  ```sh
+  docker stop <docker-id> | <docker-name>
+  ```
+
+  - #### Start
+  ```sh
+  docker start <docker-id> | <docker-name>
+  ```
