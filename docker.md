@@ -51,15 +51,74 @@ You can prevent this by ensuring that the tools don't share binaries and librari
 Docker images is what say to docker what gonna be run inside the Linux Container. 
  
 You can create custom images with the configuration of the environment, etc... but you can download images from the [docker hub](https://hub.docker.com/).  
-**You should always pull the image before create the container.**
 
 ---
 
 ## Basic commands on Docker
 
-### Pull a image
-```
-# It allow us to pull the image that we want.
-# By default, docker will always pick the latest one. 
-docker pull <image-name>:<tag>
-```
+### Images
+  - #### Pull
+  
+  ```sh
+  # It allow us to pull the image that we want.
+  # By default, docker will always pick the latest one. 
+  docker pull <image-name>:<tag>
+  ```
+  
+  - #### List
+  
+  ```sh
+  docker image ls
+  # OR
+  docker images -a
+  ```
+  
+   - #### Delete 
+
+  ```sh
+  # You would need a image ID, that you can pick on the list command.
+  docker rmi <image-id> | <image-name>
+  ```
+  
+### Containers
+  - #### Create
+  
+  ```sh 
+  docker run <properties> -d <image-name>
+
+  # "docker run" - Used to create and start a new docker container
+  # "-d" - It start the container in background, so it can run independently.
+  ```
+  
+  - #### List active containers
+  
+  ```sh
+  docker ps 
+  # OR 
+  docker container ls
+  ```
+  
+  - #### List all containers
+  
+  ```sh
+  docker ps -a
+  # OR 
+  docker container ls -a
+  ```
+  
+   - #### Delete 
+
+  ```sh
+  # You would need a container ID, that you can pick on the list command.
+  docker rm <container-id>
+  ```
+  
+  - #### Stop
+  ```sh
+  docker stop <docker-id> | <docker-name>
+  ```
+  
+  - #### Start
+  ```sh
+  docker start <docker-id> | <docker-name>
+  ```
