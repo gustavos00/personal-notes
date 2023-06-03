@@ -27,9 +27,9 @@ It supports the SQL standard and offers a wide range and advanced features like:
 
 > What is a relational database?  
 
-A relational database is a type of database management system that stores the data into tables with columns and rows.
+A relational database is a type of database management system that stores the data into tables with columns and rows.  
 Each table represents a specific entity or concept. The tables are related to each other through keys. 
-Some examples of keys is the **primary key** and the **foreign key**.
+Some examples of keys is the **primary key** and the **foreign key**.  
 
 > What is ACID transation?
 ACID is a acronym that stands for **Atomicity**, **Consistency**, **Isolation**, and **Durability**.
