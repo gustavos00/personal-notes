@@ -42,8 +42,8 @@ ACID is a acronym that stands for **Atomicity**, **Consistency**, **Isolation**,
 
 ## PostgreSQL
    - **Pros:** 
-    - Extensibility: PostgreSQL is highly extensible. It allow the users to create custom data types, functions and operators. With this, we can adapt the database to meet tohe specific needs for the application.
-    - Geographic data support: PostgreSQL has native support to geoographic data.
+     - Extensibility: PostgreSQL is highly extensible. It allow the users to create custom data types, functions and operators. With this, we can adapt the database to meet tohe specific needs for the application.
+     - Geographic data support: PostgreSQL has native support to geoographic data.
 
    - **Cons:**
      - Complexity: PostgreSQL can be more complex to configure and administer compared to MySQL. Because of the a lot of the configuration options and advanced knowledge to optimize performance and security. 
