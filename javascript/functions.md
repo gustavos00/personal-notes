@@ -125,3 +125,41 @@ function plus(...someArguments) {
 
 plus(1, 2, 3, 4, 5, 6, 7);
 ```
+
+# Default Parameters
+
+Let's assume that you have a function called `printGreetings` that receive a message as a parameter.
+
+```javascript
+function printGreetings(message) {
+  console.log(message); // Welcome on-board. :)
+}
+
+printGreetings("Welcome on-board. :)");
+```
+
+However, if you don't pass any parameter to the function, you will see `undefined` being printed by the `console.log`.
+
+```javascript
+function printGreetings(message) {
+  console.log(message); // undefined
+}
+
+printGreetings();
+```
+
+## How we can prevent this?
+
+We can have some work-arounds with conditional (ternary) operators but **personally** I think the best approach is to add a **default valut** to that parameter.
+
+### How?
+
+We can do this by saying that the parameter is equal to something, being this something the default value that we want.
+
+```javascript
+function printGreetings(message = "Default greeting message.") {
+  console.log(message); // Default greeting message.
+}
+
+printGreetings();
+```
