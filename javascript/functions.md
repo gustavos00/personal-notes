@@ -29,7 +29,7 @@ const mockedArrowFunction = () => {};
 
 **This** is the value of the function, being able to set some properties on him.
 
-### Practical cases
+## Practical cases
 
 - #### Function
 
